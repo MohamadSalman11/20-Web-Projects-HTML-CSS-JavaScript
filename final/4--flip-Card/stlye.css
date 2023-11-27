@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ctn {
+  perspective: 2000px;
+  width: 400px;
+  height: 550px;
+}
+
+.ctn:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: transform 1500ms;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 11px;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url(ninja-big.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.back {
+  background-color: black;
+  padding: 12px;
+  transform: rotateY(180deg);
+}
+
+.circle-img {
+  display: inline-block;
+  background-image: url(ninja-small.png);
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 5px solid #eee;
+}
+
+.circle-img-ctn {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #eee;
+  margin-top: 12px;
+}
+
+h2 {
+  color: #eee;
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+.line-ctn {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 25px;
+}
+
+.line-ctn span {
+  display: inline-block;
+  width: 100%;
+  height: 15px;
+  background-color: #eee;
+  border-radius: 2px;
+  position: relative;
+}
+
+.line-ctn span div {
+  position: absolute;
+  height: 100%;
+  background-color: red;
+}
+
+.ctn:hover .card .back .line-ctn .fill-el--1 {
+  animation: anim-1 1s cubic-bezier(1, 0.28, 0.83, 0.67);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+.ctn:hover .card .back .line-ctn .fill-el--2 {
+  animation: anim-2 1s cubic-bezier(1, 0.28, 0.83, 0.67);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.ctn:hover .card .back .line-ctn .fill-el--3 {
+  animation: anim-3 1s cubic-bezier(1, 0.28, 0.83, 0.67);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+.ctn:hover .card .back .line-ctn .fill-el--4 {
+  animation: anim-4 1s cubic-bezier(1, 0.28, 0.83, 0.67);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-4 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+.ctn:hover .card .back .line-ctn .fill-el--5 {
+  animation: anim-5 1s cubic-bezier(1, 0.28, 0.83, 0.67);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}

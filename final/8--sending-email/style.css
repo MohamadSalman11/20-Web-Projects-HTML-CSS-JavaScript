@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(rgb(117, 54, 130, 0.8), rgb(117, 54, 130, 0.8)),
+    url(img--2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  margin: 38px;
+}
+
+.container {
+  width: 420px;
+  background-color: #fff;
+}
+
+input,
+textarea {
+  outline: none;
+  width: 100%;
+  padding: 12px 8px 12px 40px;
+}
+
+.building__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(img--1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.send__button {
+  border: none;
+  background-color: #753682;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 4px;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 10px 20px 0px;
+  transition: transform 0.3s linear;
+}
+
+.send__button:hover {
+  transform: translateY(-2px);
+}
+
+.send__button:active {
+  transform: scale(0.95);
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 3%;
+}
+
+.message-icon {
+  top: 6.5%;
+}
+
+span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

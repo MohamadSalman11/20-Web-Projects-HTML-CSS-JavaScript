@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital@1&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result__ctn">
+        <p class="previous-operation">=</p>
+        <p class="result"></p>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="delete-all">DC</td>
+            <td class="delete-button">
+              <img src="delete-icon.png" alt="delete-icon" />
+            </td>
+            <td data-sign=" % ">%</td>
+            <td data-sign=" ÷ ">÷</td>
+          </tr>
+
+          <tr>
+            <td data-sign="7">7</td>
+            <td data-sign="8">8</td>
+            <td data-sign="9">9</td>
+            <td data-sign=" x ">x</td>
+          </tr>
+
+          <tr>
+            <td data-sign="4">4</td>
+            <td data-sign="5">5</td>
+            <td data-sign="6">6</td>
+            <td data-sign=" - ">-</td>
+          </tr>
+
+          <tr>
+            <td data-sign="1">1</td>
+            <td data-sign="2">2</td>
+            <td data-sign="3">3</td>
+            <td data-sign=" + ">+</td>
+          </tr>
+
+          <tr>
+            <td>🎱</td>
+            <td data-sign="0">0</td>
+            <td data-sign=".">.</td>
+            <td class="calc-button">=</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

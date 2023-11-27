@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <input type="text" class="color__input" />
+    <div class="container">
+      <div class="img__ctn">
+        <canvas class="canvas" width="500" height="300"></canvas>
+      </div>
+      <div class="color__ctn">
+        <span class="preview__color"></span>
+        <span class="hex__ctn">
+          <h1>RGB:</h1>
+          <p class="hex__value">rgb(255, 255, 255)</p>
+        </span>
+        <img class="copy" src="copy.png" alt="copy icon" />
+      </div>
+      <button class="use__img__button">USE YOUR IMAGE</button>
+    </div>
+
+    <span class="copy__message">COLOR COPIED</span>
+
+    <script src="script.js"></script>
+  </body>
+</html>

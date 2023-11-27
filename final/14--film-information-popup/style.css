@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.movie,
+.popup__movie {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  background-color: #111;
+  cursor: pointer;
+}
+
+.movie-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.movie span,
+.popup__movie span {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: #fff;
+  font-size: 24px;
+  margin: 12px;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+}
+
+.movie-title {
+  margin: 24px 12px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.popup__ctn {
+  width: 100%;
+  height: 100vb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#000000ab, #000000ab);
+  backdrop-filter: blur(8px);
+}
+
+.popup {
+  position: relative;
+  width: 1000px;
+  height: 620px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.popup__movie__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.movie__info {
+  width: 640px;
+  height: 100%;
+  background-color: #111;
+  color: #fff;
+  padding: 32px 90px 32px 32px;
+}
+
+.movie__description {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.popup__movie {
+  cursor: auto;
+}
+
+.movie__info span {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  margin-top: 32px;
+}
+
+.movie__info span h1 {
+  font-size: 16px;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.zoom-in {
+  animation: zoom-in 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.zoom-out {
+  animation: zoom-out 0.5s ease-in-out;
+}
+
+.show {
+  display: flex;
+}

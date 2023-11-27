@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Film Info Popup</title>
+  </head>
+  <body>
+    <div class="movies">
+      <!-- 1 -->
+      <div class="movie" data-movie="luca">
+        <img class="movie-img" src="images/movie-img--1.jpeg" alt="movie img" />
+        <span>
+          <img class="star" src="icons/star.png" alt="star icon" />
+          <p>9.5</p>
+        </span>
+        <p class="movie-title">Luca</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="movie" data-movie="cars">
+        <img class="movie-img" src="images/movie-img--2.jpeg" alt="movie img" />
+        <span>
+          <img class="star" src="icons/star.png" alt="star icon" />
+          <p>8.7</p>
+        </span>
+        <p class="movie-title">Cars</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="movie" data-movie="frozen">
+        <img class="movie-img" src="images/movie-img--3.jpeg" alt="movie img" />
+        <span>
+          <img class="star" src="icons/star.png" alt="star icon" />
+          <p>7.8</p>
+        </span>
+        <p class="movie-title">Frozen</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="movie" data-movie="onward">
+        <img class="movie-img" src="images/movie-img--4.jpeg" alt="movie img" />
+        <span>
+          <img class="star" src="icons/star.png" alt="star icon" />
+          <p>10.0</p>
+        </span>
+        <p class="movie-title">Onward</p>
+      </div>
+    </div>
+
+    <div class="popup__ctn">
+      <div class="popup">
+        <div class="popup__movie">
+          <img
+            class="popup__movie__img"
+            src="images/movie-img--4.jpeg"
+            alt="movie img"
+          />
+          <span>
+            <img class="star" src="icons/star.png" alt="star icon" />
+            <p class="popup__rating">10.0</p>
+          </span>
+          <p class="popup__movie__title movie-title">Onward</p>
+        </div>
+
+        <div class="movie__info">
+          <p class="movie__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            culpa, atque sequi tempora temporibus velit optio inventore amet
+            facilis ducimus odit eveniet. Veritatis doloremque, facilis quia nam
+            sit voluptates a!
+          </p>
+
+          <span>
+            <h1>Trailer:</h1>
+            <p>click here</p>
+          </span>
+
+          <span>
+            <h1>Release year:</h1>
+            <p class="movie__release__date">June 3, 2021</p>
+          </span>
+
+          <span>
+            <h1>Creators:</h1>
+            <p class="creators">
+              Enrico Casarosa, Andrea Warren, Jesse Andrews
+            </p>
+          </span>
+
+          <span>
+            <h1>Stars:</h1>
+            <p class="stars">
+              Jacob Tremblay, Emma Berman, Peter Sohn, Sandy Martin
+            </p>
+          </span>
+        </div>
+
+        <img class="close" src="icons/close.png" alt="close icon" />
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="showData.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -30px;
+  border: 4px solid transparent;
+  border-top: 4px solid #ffd60a;
+  border-radius: 50%;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ring::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 5px #ffd60a33, 0 0 0 10px #ffd60a22, 0 0 0 20px #ffd60a11,
+    0 0 20px #ffd60a, 0 0 50px #ffd60a;
+  background: #ffd60a;
+}
+
+.ring--2 {
+  animation: animate-2 4s linear infinite;
+  animation-delay: -1s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #00fff5;
+}
+
+@keyframes animate-2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ring--2::before {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 5px #00fff533, 0 0 0 10px #00fff522, 0 0 0 20px #00fff511,
+    0 0 20px #00fff5, 0 0 50px #00fff5;
+  background: #00fff5;
+}
+
+.ring--3 {
+  animation: animate-2 4s linear infinite;
+  animation-delay: -3s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #e11cf8;
+  position: absolute;
+  top: -66.55px;
+}
+
+.ring--3::before {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 5px #e11cf833, 0 0 0 10px #e11cf822, 0 0 0 20px #e11cf811,
+    0 0 20px #e11cf8, 0 0 50px #e11cf8;
+  background: #e11cf8;
+}

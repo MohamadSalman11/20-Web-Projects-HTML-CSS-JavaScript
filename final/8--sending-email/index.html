@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sending Emails</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="building__img"></div>
+
+      <form action="https://formspree.io/f/xyyqavwa" method="post">
+        <span>
+          <input
+            name="Full Name"
+            type="text"
+            placeholder="Full Name"
+            required
+          />
+          <img src="icons/user.png" alt="user icon" />
+        </span>
+
+        <span>
+          <input
+            name="Email Address"
+            type="email"
+            placeholder="E.g. example@gmail.com"
+            required
+          />
+          <img src="icons/email.png" alt="email icon" />
+        </span>
+
+        <span>
+          <input
+            name="Phone Number"
+            type="text"
+            placeholder="De +49 123 4567890"
+          />
+          <img src="icons/device.png" alt="device icon" />
+        </span>
+
+        <span>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <img
+            class="message-icon"
+            src="icons/message.png"
+            alt="message icon"
+          />
+        </span>
+
+        <button class="send__button">SEND NOW</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

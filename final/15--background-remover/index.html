@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Remover</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img__ctn">
+        <span class="white__background">
+          <img
+            class="loading__spinner"
+            src="icons/loading.png"
+            alt="loading spinner"
+          />
+        </span>
+        <h1 class="title">Select an image to remove background</h1>
+        <img class="img__preview" src="#" alt="image preview" />
+        <a class="download" href="#" download="image_with_no_background"></a>
+      </div>
+      <div class="upload__ctn">
+        <div class="upload">
+          <img
+            class="gallery__icon"
+            src="icons/gallery.png"
+            alt="gallery-icon"
+          />
+          <input type="file" class="file__input" />
+          <button class="upload__button">
+            <img src="icons/upload.png" alt="upload-icon" />
+            <p>UPLOAD IMG</p>
+          </button>
+          <button class="download__button">
+            <img src="icons/download.png" alt="download-icon" />
+            <p>DOWNLOAD</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
